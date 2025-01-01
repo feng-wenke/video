@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>哔哩哔哩视频嵌入</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f5f5f5;
+            font-family: Arial, sans-serif;
+        }
+        
+        .bilibili-video {
+            width: 100%;
+            max-width: 800px;
+            margin: 20px auto;
+            overflow: hidden;
+        }
+        
+        .bilibili-video iframe {
+            width: 100%;
+            height: 450px;
+            /* 默认高度 */
+        }
+        
+        @media (max-width: 768px) {
+            .bilibili-video iframe {
+                height: 250px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 视频容器1 -->
+    <div class="bilibili-video">
+        <iframe src="https://player.bilibili.com/player.html?isOutside=true&aid=24594710&bvid=BV1uW411P7K8&cid=41333221&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true">
+        </iframe>
+    </div>
+
+    <!-- 视频容器2 -->
+    <div class="bilibili-video">
+        <iframe src="https://player.bilibili.com/player.html?isOutside=true&aid=30111662&bvid=BV15W411X7i6&cid=52489961&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true">
+        </iframe>
+    </div>
+
+    <!-- 视频容器3 -->
+    <div class="bilibili-video">
+        <iframe src="https://player.bilibili.com/player.html?isOutside=true&aid=755056984&bvid=BV1Ar4y1w77V&cid=248343649&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true">
+        </iframe>
+    </div>
+</body>
+
+</html>
