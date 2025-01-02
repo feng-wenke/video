@@ -35,27 +35,48 @@
                 height: 250px;
             }
         }
+        
+        .light-theme {
+            background-color: #ffffff;
+            color: #000000;
+        }
+        
+        .dark-theme {
+            background-color: #333333;
+            color: #ffffff;
+        }
     </style>
 </head>
 
 <body>
-    <!-- 视频容器1 -->
+
     <div class="bilibili-video">
-        <iframe src="https://player.bilibili.com/player.html?isOutside=true&aid=24594710&bvid=BV1uW411P7K8&cid=41333221&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true">
+        <iframe src="https://player.bilibili.com/player.html?isOutside=true&aid=755056984&bvid=BV1Ar4y1w77V&cid=248343649&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true">
         </iframe>
     </div>
 
-    <!-- 视频容器2 -->
     <div class="bilibili-video">
         <iframe src="https://player.bilibili.com/player.html?isOutside=true&aid=30111662&bvid=BV15W411X7i6&cid=52489961&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true">
         </iframe>
     </div>
 
-    <!-- 视频容器3 -->
+
     <div class="bilibili-video">
-        <iframe src="https://player.bilibili.com/player.html?isOutside=true&aid=755056984&bvid=BV1Ar4y1w77V&cid=248343649&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true">
+        <iframe src="https://player.bilibili.com/player.html?isOutside=true&aid=24594710&bvid=BV1uW411P7K8&cid=41333221&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true">
         </iframe>
     </div>
+
+
+
+
+
+    <script>
+        // 页面加载时，从localStorage获取主题并应用
+        document.addEventListener('DOMContentLoaded', function() {
+            var savedTheme = localStorage.getItem('theme') || 'light';
+            document.body.className = savedTheme + '-theme'; // 应用主题
+        });
+    </script>
 </body>
 
 </html>
