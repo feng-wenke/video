@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>哔哩哔哩视频嵌入</title>
+    <title>Video</title>
     <style>
         body {
             margin: 0;
@@ -35,16 +35,6 @@
                 height: 250px;
             }
         }
-        
-        .light-theme {
-            background-color: #ffffff;
-            color: #000000;
-        }
-        
-        .dark-theme {
-            background-color: #333333;
-            color: #ffffff;
-        }
     </style>
 </head>
 
@@ -60,23 +50,11 @@
         </iframe>
     </div>
 
-
     <div class="bilibili-video">
         <iframe src="https://player.bilibili.com/player.html?isOutside=true&aid=24594710&bvid=BV1uW411P7K8&cid=41333221&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true">
         </iframe>
     </div>
 
-
-
-
-
-    <script>
-        // 页面加载时，从localStorage获取主题并应用
-        document.addEventListener('DOMContentLoaded', function() {
-            var savedTheme = localStorage.getItem('theme') || 'light';
-            document.body.className = savedTheme + '-theme'; // 应用主题
-        });
-    </script>
 </body>
 
 </html>
