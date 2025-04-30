@@ -54,7 +54,23 @@
         <iframe src="https://player.bilibili.com/player.html?isOutside=true&aid=24594710&bvid=BV1uW411P7K8&cid=41333221&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true">
         </iframe>
     </div>
+<script>
+    // 设置入口页面的URL
+    var entryPageUrl = "https://homepage.328249.xyz/";
 
+    // 检查用户是否从入口页面进入
+    function checkEntryPoint() {
+      var referrer = document.referrer;
+      // 检查referrer是否为入口页面URL
+      if (referrer !== entryPageUrl) {
+        // 如果不是，重定向到入口页面
+        window.location.href = "https://login.328249.xyz/";
+      }
+    }
+
+    // 在页面加载时检查
+    window.onload = checkEntryPoint;
+  </script>
 </body>
 
 </html>
